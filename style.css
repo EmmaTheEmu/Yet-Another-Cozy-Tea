@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+  background-color: black;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+header {
+  background-color: black;
+  position: fixed;
+  height: 69px;
+  width: 100vw;
+  border-bottom: solid 1px seashell;
+}
+
+header img {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 50px;
+}
+
+nav {
+  margin-top: 20px;
+  margin-right: 40px;
+  /* ^ Hacky solution don't judge me  */
+  display: inline;
+  float: right;
+}
+
+a {
+  top: 0;
+  padding-right: 10px;
+  text-decoration: underline;
+  transition: 0.15s;
+}
+
+a:link,
+a:visited {
+  color: seashell;
+}
+
+a:hover {
+  position: relative;
+  top: 5px;
+}
+
+.container {
+  display:flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#mission {
+  display: inline-flex;
+  background-image: url("img/img-mission-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  height: 700px;
+}
+
+#mission_text {
+  margin-top: 300px;
+  text-align: center;
+  background-color: black;
+  width: 1200px;
+  height: 130px;
+  position: relative;
+}
+
+#month_highlight {
+  text-align: center;
+  width: 1000px;
+}
+
+.month_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.month_box img {
+  margin-right: 20px;
+  height: 200px;
+  transition: 0.35s;
+}
+
+.month_box img:hover {
+  height: 220px;
+}
+
+.month_box h4 {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+#locations {
+  background-image: url("img/img-locations-background.jpg");
+  width: 1200px;
+  height: 550px;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.locations_flex h3 {
+  text-shadow: 1px 1px black;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.locations-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.locations-box {
+  background-color: black;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: 0.25s;
+  /* As nesuprantu kodel tai centruoja puikiai */
+  /* ir nemanau kad noriu zinoti */
+}
+
+.locations-box:hover {
+  scale: 110%;
+}
+
+.locations-box h3 {
+  margin-top: 50px;
+}
+
+#contact_info {
+  width: 1050px;
+  height: 200px;
+  text-align: center;
+}
+
+#contact_info a,
+a:link,
+a:visited,
+h5 {
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  transition: 0.25s;
+}
+
+#contact_info a:hover {
+  font-size: 130%;
+}
+
+footer {
+  margin-left: 20px;
+  text-align: left;
+}
