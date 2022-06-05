@@ -30,6 +30,7 @@ nav {
 }
 
 a {
+  text-decoration: none;
   top: 0;
   padding-right: 10px;
   transition: 0.15s;
